@@ -211,9 +211,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputManager: {fileID: 0}
-  mouseSensitivity: 20
-  walkSpeed: 4
-  sprintSpeed: 6
+  mouseSensitivity: 5
+  walkSpeed: 3
+  sprintSpeed: 4
   crouchSpeed: 1.5
   crouchHeight: 1
   crouchCameraHeight: 1
@@ -221,7 +221,7 @@ MonoBehaviour:
   slideDuration: 0.7
   slideFovBoost: 5
   slideTiltAngle: 5
-  jumpSpeed: 5
+  jumpSpeed: 2
   gravity: 10
   coyoteTimeEnabled: 1
   coyoteTimeDuration: 0.2
