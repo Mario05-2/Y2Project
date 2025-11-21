@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.5049443, g: 0.66686577, b: 0.7610062, a: 0.78431374}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.03
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.19757913, g: 0.30906978, b: 0.46540874, a: 1}
@@ -46183,8 +46183,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.3679244, g: 0.85318613, b: 1, a: 1}
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
@@ -46566,7 +46566,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -46634,7 +46634,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 15, y: 15, z: 1}
+    m_Scale: {x: 225, y: 225, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -46832,7 +46832,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 10000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -49581,7 +49581,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     type: 1
     collisionMode: 0
@@ -50727,7 +50727,7 @@ Transform:
   m_GameObject: {fileID: 338959744}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 122.33, y: 16, z: -0.64}
+  m_LocalPosition: {x: 55.7, y: 16.1, z: -0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -296989,79 +296989,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4315833906803546, guid: 03d51debf4b659f4fa4c76c2c4ca3e3b, type: 3}
   m_PrefabInstance: {fileID: 1819892355}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7467371800437906641
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.794
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767880686878917785, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838833430958271930, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838833430958271930, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838833430958271930, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.8651918
-      objectReference: {fileID: 0}
-    - target: {fileID: 3838833430958271930, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.63207537
-      objectReference: {fileID: 0}
-    - target: {fileID: 6598198601273078611, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
-      propertyPath: m_Name
-      value: Particle System
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1cebffb68ef01924c9632af758ace94c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -297084,5 +297011,4 @@ SceneRoots:
   - {fileID: 65097421}
   - {fileID: 1953724138}
   - {fileID: 1674647393}
-  - {fileID: 7467371800437906641}
   - {fileID: 338959747}
