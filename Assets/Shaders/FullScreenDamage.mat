@@ -36,7 +36,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _VignetteIntensity: 1.775
+    - _VignettePower: 9.3
+    - _VoronoiDensity: 5
+    - _VoronoiIntensity: 2
+    - _VoronoiPower: 3.02
+    - _VoronoiSpeed: 0.16
+    m_Colors:
+    - _VoronoiColour: {r: 0, g: 0.197842, b: 0.52156866, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
