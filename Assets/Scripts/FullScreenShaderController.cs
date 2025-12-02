@@ -28,12 +28,20 @@ public class FullScreenShaderController : MonoBehaviour
         _fullScreenDamage.SetActive(false);
     }
 
+    public void StartFreeze()
+    {
+        StartCoroutine(Hurt());
+    }
+        
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
             StartCoroutine(Hurt());
         }
+
+        
     }
 
     private IEnumerator Hurt()
