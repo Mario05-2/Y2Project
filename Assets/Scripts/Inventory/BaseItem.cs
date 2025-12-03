@@ -1,15 +1,10 @@
 using UnityEngine;
 
-public class BaseItem
+[CreateAssetMenu(fileName = "New Base Item", menuName = "Inventory/Base Item")]
+public class BaseItem : ScriptableObject
 {
-    void Start()
-    {
-        
-
-    }
-
-    void Update()
-    {
-        
-    }
+    public int id;
+    public string itemName;
+    public int value;
+    public Sprite icon;
 }
