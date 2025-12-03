@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc0bbb71e9e1924494e065e30b25375, type: 3}
   m_Name: GreenGrape
   m_EditorClassIdentifier: 
-  id: 0
-  itemName: 
-  value: 0
+  id: 2
+  itemName: GreenGrape
+  value: 20
   icon: {fileID: 0}
