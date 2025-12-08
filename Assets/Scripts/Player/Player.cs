@@ -16,21 +16,27 @@ public class Player : MonoBehaviour
     public float hungerDrainRate = 10f;
     public float hydrationDrainRate = 20f;
 
+    [Header("Health Penalty Rates")]
+    public float starvationDamage = 6f;
+    public float dehydrationDamage = 7f;
+
     [Header("Temperature Stats")]
     public float temperatureLevel = 100f;
     public float currentTemperature = 80f;
 
+    [Header("Test Values")]
     public float testHealing = 10f;
-
     public float damage = 20f;
-
-    public float starvationDamage = 6f;
-    public float dehydrationDamage = 7f;
 
     [Header("UI Bars")]
     public Slider healthBar;
     public Slider hungerBar;
     public Slider hydrationBar;
+
+    [Header("Full Screen Shader Controller")]
+    public FullScreenShaderController fssc;
+    
+    public UIMananger uiManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -82,7 +88,7 @@ public class Player : MonoBehaviour
         currentHunger -= hungerDrainRate * Time.deltaTime;
         currentHunger = Mathf.Clamp(currentHunger, 0, maxHunger);
         hungerBar.value = currentHunger;
-        Debug.Log(currentHunger);
+        //Debug.Log(currentHunger);
         if (currentHunger <= 0)
         {
             Debug.Log("Player is starving");
@@ -94,7 +100,7 @@ public class Player : MonoBehaviour
         currentHydration -= hydrationDrainRate * Time.deltaTime;
         currentHydration = Mathf.Clamp(currentHydration, 0, maxHydration);
         hydrationBar.value = currentHydration;
-        Debug.Log(currentHydration);
+        //Debug.Log(currentHydration);
         if (currentHydration <= 0)
         {
             Debug.Log("Player is dehydrated");
@@ -103,20 +109,16 @@ public class Player : MonoBehaviour
 
     public void HealthPenalties()
     {
-        // Different rates depending on which stats are depleted
         if (currentHunger <= 0 && currentHydration <= 0)
         {
-            // Both zero: apply combined, harsher damage
             currentHealth -= (starvationDamage + dehydrationDamage) * Time.deltaTime;
         }
         else if (currentHunger <= 0)
         {
-            // Only hunger zero
             currentHealth -= starvationDamage * Time.deltaTime;
         }
         else if (currentHydration <= 0)
         {
-            // Only hydration zero
             currentHealth -= dehydrationDamage * Time.deltaTime;
         }
 
@@ -147,6 +149,8 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
+        fssc.StartFreeze();
+        uiManager.DeathMenu();
         Debug.Log("Player has died.");
     }
 

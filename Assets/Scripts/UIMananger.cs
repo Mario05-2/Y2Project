@@ -5,12 +5,18 @@ using UnityEngine.UI;
 public class UIMananger : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject deathMenu;
 
     public static bool isGamePaused;
 
     bool prevCursorVisible;
     CursorLockMode prevLockState;
 
+    public void Awake()
+    {
+        deathMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
     void Start()
     {
         pauseMenu.SetActive(false);
@@ -48,6 +54,19 @@ public class UIMananger : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
      
+        if (EventSystem.current != null)
+            EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    public void DeathMenu()
+    {
+        deathMenu.SetActive(true);
+        Time.timeScale = 0f;
+        isGamePaused = true;
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
         if (EventSystem.current != null)
             EventSystem.current.SetSelectedGameObject(null);
     }
