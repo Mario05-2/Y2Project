@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class UIMananger : MonoBehaviour
 {
@@ -7,7 +8,6 @@ public class UIMananger : MonoBehaviour
 
     public static bool isGamePaused;
 
-  
     bool prevCursorVisible;
     CursorLockMode prevLockState;
 

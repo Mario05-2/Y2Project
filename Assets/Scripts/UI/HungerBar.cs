@@ -1,8 +1,11 @@
 using UnityEngine;
-
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 public class HungerBar : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Slider hungerBar;
+    public HungerBar playerHunger;
     void Start()
     {
         

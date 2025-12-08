@@ -7,7 +7,6 @@ public class GameManagerBehaviour : MonoBehaviour
 
     public static bool isGamePaused;
 
-  
     bool prevCursorVisible;
     CursorLockMode prevLockState;
 
