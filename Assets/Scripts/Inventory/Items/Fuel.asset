@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Fuel
   value: 1
   icon: {fileID: 21300000, guid: 9d857282a06f4284685e5671a7faa1dd, type: 3}
+  cosumableType: 3

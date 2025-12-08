@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 4395607590698695718}
   - component: {fileID: 9099390792895297553}
   - component: {fileID: 1543193480541434572}
+  - component: {fileID: 8010485511778940521}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -198,6 +199,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8010485511778940521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611965399774074633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329f71165115273448ca919388f1a07f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
+  player: {fileID: 0}
+  RemoveButton: {fileID: 879236561360661866}
 --- !u!1 &5977762290149545236
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

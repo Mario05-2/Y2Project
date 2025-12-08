@@ -107,6 +107,30 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void IncreaseHealth(float amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        healthBar.value = currentHealth;
+        Debug.Log(currentHealth);
+    }
+
+    public void IncreaseHunger(float amount)
+    {
+        currentHunger += amount;
+        currentHunger = Mathf.Clamp(currentHunger, 0, maxHunger);
+        hungerBar.value = currentHunger;
+        Debug.Log(currentHunger);
+    }
+
+    public void IncreaseHydration(float amount)
+    {
+        currentHydration += amount;
+        currentHydration = Mathf.Clamp(currentHydration, 0, maxHydration);
+        hydrationBar.value = currentHydration;
+        Debug.Log(currentHydration);
+    }
+
     public void HealthPenalties()
     {
         if (currentHunger <= 0 && currentHydration <= 0)

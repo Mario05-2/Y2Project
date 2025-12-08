@@ -1,14 +1,31 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class GameManagerBehaviour : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
     [SerializeField] GameObject pauseMenu;
 
     public static bool isGamePaused;
 
     bool prevCursorVisible;
     CursorLockMode prevLockState;
+
+    public int itemsNeeded = 5;
+    public int itemsCollected = 0;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {

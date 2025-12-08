@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: GreenGrape
   value: 20
   icon: {fileID: 21300000, guid: a53d5b897cf8d7b40a84686010357367, type: 3}
+  cosumableType: 1
