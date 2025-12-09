@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -1077563396400606901}
   - component: {fileID: 5740647900887646351}
   - component: {fileID: 8421739793636288563}
+  - component: {fileID: 394590669342746505}
   m_Layer: 0
   m_Name: Fuel
   m_TagString: Untagged
@@ -151,3 +152,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 1
   destroyOnCollect: 1
+--- !u!114 &394590669342746505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564565117665638967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab63f7cf89210648944265231710690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 8300000, guid: c38f9453df9e46b4aa71660ec44c4af1, type: 3}
+  volume: 1
