@@ -7,6 +7,21 @@ public class InventoryItemController : MonoBehaviour
     public Player player;
 
     public Button RemoveButton;
+    public Button UseButton;
+
+        void Awake()
+    {
+        if (UseButton != null)
+        {
+            UseButton.onClick.RemoveAllListeners();
+            UseButton.onClick.AddListener(UseItem);
+        }
+        if (RemoveButton != null)
+        {
+            RemoveButton.onClick.RemoveAllListeners();
+            RemoveButton.onClick.AddListener(RemoveItem);
+        }
+    }
 
     public void RemoveItem()
     {
