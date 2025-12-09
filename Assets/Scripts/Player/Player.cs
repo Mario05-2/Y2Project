@@ -146,7 +146,7 @@ public class Player : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-        Debug.Log(currentHealth);
+        //Debug.Log(currentHealth);
 
         if (healthBar != null)
             healthBar.value = currentHealth;
