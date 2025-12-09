@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6482923838552426533}
   - component: {fileID: -4103565515295812125}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: GreenGrape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

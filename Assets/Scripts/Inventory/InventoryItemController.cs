@@ -51,13 +51,15 @@ public class InventoryItemController : MonoBehaviour
         switch (item.itemType)
         {
             case BaseItem.ItemType.Food:
-                player.IncreaseHealth(item.value);
+                player.IncreaseHunger(item.value);
                 break;
             case BaseItem.ItemType.Drink:
                 player.IncreaseHydration(item.value);
                 break;
             case BaseItem.ItemType.Medicine:
                 player.IncreaseHealth(item.value);
+                break;
+            case BaseItem.ItemType.Fuel:
                 break;
             case BaseItem.ItemType.Other:
                 break;

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efc0bbb71e9e1924494e065e30b25375, type: 3}
-  m_Name: GreenGrape
+  m_Name: MedKit
   m_EditorClassIdentifier: 
-  id: 2
-  itemName: GreenGrape
-  value: 20
-  icon: {fileID: 21300000, guid: a53d5b897cf8d7b40a84686010357367, type: 3}
-  itemType: 1
+  id: 6
+  itemName: MedKit
+  value: 25
+  icon: {fileID: 21300000, guid: e3d44d183d1633944af53861077a1b6e, type: 3}
+  itemType: 2

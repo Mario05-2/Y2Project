@@ -6,6 +6,7 @@ public class UIMananger : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject deathMenu;
+    [SerializeField] GameObject winMenu;
 
     public static bool isGamePaused;
 
@@ -61,6 +62,19 @@ public class UIMananger : MonoBehaviour
     public void DeathMenu()
     {
         deathMenu.SetActive(true);
+        Time.timeScale = 0f;
+        isGamePaused = true;
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        if (EventSystem.current != null)
+            EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    public void WinMenu()
+    {
+        winMenu.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;
 
