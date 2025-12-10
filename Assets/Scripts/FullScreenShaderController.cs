@@ -41,7 +41,6 @@ public class FullScreenShaderController : MonoBehaviour
             StartCoroutine(Hurt());
         }
 
-        
     }
 
     private IEnumerator Hurt()

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6067395697002154853}
   - component: {fileID: 7819396190132741861}
   - component: {fileID: 7188224138260923362}
+  - component: {fileID: 2967518350474262812}
   m_Layer: 0
   m_Name: FirstAid_Red
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3493094, y: 1.3493094, z: 1.3493094}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8254291047509846808}
@@ -128,6 +129,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.35397264, y: 0.36813873, z: 0.4356526}
   m_Center: {x: 0.0024731911, y: -0.0012750879, z: -0.0052300026}
+--- !u!114 &2967518350474262812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5396988188536389404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab63f7cf89210648944265231710690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 8300000, guid: c38f9453df9e46b4aa71660ec44c4af1, type: 3}
+  volume: 1
 --- !u!1001 &8432876519998590195
 PrefabInstance:
   m_ObjectHideFlags: 0

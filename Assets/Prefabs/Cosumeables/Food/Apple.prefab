@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -7563652101539886471}
   - component: {fileID: -4662550329176819583}
   - component: {fileID: -3020478034142349886}
+  - component: {fileID: 1831160612676742986}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -137,3 +138,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300016, guid: 3f4d2118f6a772542a1635ef5bfa6982, type: 3}
+--- !u!114 &1831160612676742986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829371231341652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab63f7cf89210648944265231710690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  clip: {fileID: 8300000, guid: c38f9453df9e46b4aa71660ec44c4af1, type: 3}
+  volume: 1

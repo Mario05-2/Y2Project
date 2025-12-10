@@ -183,8 +183,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7433300297800293919}
   - component: {fileID: 5483733349132904209}
-  - component: {fileID: -457759798523349893}
   - component: {fileID: -4597911052919306080}
+  - component: {fileID: 317156075832965798}
+  - component: {fileID: 8181821689712774045}
   - component: {fileID: 1020717792365320249}
   m_Layer: 0
   m_Name: SodaCan_01
@@ -203,7 +204,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6609318, y: 1.6609318, z: 1.6609318}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7912639180197838076}
@@ -254,8 +255,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-457759798523349893
-MeshCollider:
+--- !u!114 &-4597911052919306080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7810283611281769637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee0d6a1e753bde14581cc4d1d8d90c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 7e899f5de99fe0a4d80ddadc73e3a022, type: 2}
+--- !u!65 &317156075832965798
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -272,11 +286,10 @@ MeshCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!114 &-4597911052919306080
+  serializedVersion: 3
+  m_Size: {x: 0.4702523, y: 0.63054395, z: 0.5620987}
+  m_Center: {x: -0.4076292, y: 0.1847278, z: -0.020472234}
+--- !u!114 &8181821689712774045
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,10 +298,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7810283611281769637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0d6a1e753bde14581cc4d1d8d90c1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ab63f7cf89210648944265231710690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  audioSource: {fileID: 0}
+  clip: {fileID: 8300000, guid: c38f9453df9e46b4aa71660ec44c4af1, type: 3}
+  volume: 1
 --- !u!114 &1020717792365320249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,4 +316,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52c6f0bc380b2146a6ed75cf3b9dc88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 7e899f5de99fe0a4d80ddadc73e3a022, type: 2}
